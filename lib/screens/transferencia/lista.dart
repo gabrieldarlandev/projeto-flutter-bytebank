@@ -27,15 +27,15 @@ class ListaTransferenciasState extends State<ListaTransferencias> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return FormularioTransferencia();
-          })).then((transferenciaRecebida) => _atualiza(transferenciaRecebida));
-        },
-        child: Icon(
-          Icons.add,
-        ),
-      ),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return FormularioTransferencia();
+            })).then(
+                (transferenciaRecebida) => _atualiza(transferenciaRecebida));
+          },
+          child: Icon(
+            Icons.add,
+          )),
     );
   }
 
